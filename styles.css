@@ -1,0 +1,33 @@
+body {
+    background-color: #ffc9c9;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+
+.site {
+    margin: 10px 0;
+}
+
+.status-symbol {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.offline {
+    color: red;
+    animation: blink 1s infinite;
+}
+
+.online {
+    color: green;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}

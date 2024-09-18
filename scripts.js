@@ -1,38 +1,38 @@
-// Seleccionar todos los elementos de la lista
-const links = document.querySelectorAll('#linkList li');
-
-// Función para verificar si un sitio está en línea
+// Función para verificar el estado del sitio
 async function checkSiteStatus(url) {
     try {
-        const response = await fetch(url, { mode: 'no-cors' });
-        // Si fetch tiene éxito, el sitio está accesible
-        return response.status >= 200 && response.status < 300 || response.type === 'opaque';
+        // Intentar hacer una petición al sitio
+        const response = await fetch(url, { method: 'HEAD', mode: 'no-cors' });
+        // Si no lanza un error, asumimos que el sitio está online
+        return true;
     } catch (error) {
-        // Si hay un error (por ejemplo, CORS o el sitio no está accesible), lo tratamos como offline
+        // Si lanza un error, consideramos que está offline
         return false;
     }
 }
 
 // Función para actualizar el estado de cada sitio
 async function updateStatus() {
-    links.forEach(async (link) => {
+    const links = document.querySelectorAll('#linkList li'); // Seleccionar todos los enlaces
+
+    links.forEach(async (link, index) => {
         const url = link.getAttribute('data-url');
         const isOnline = await checkSiteStatus(url);
-        
-        const statusIndicator = document.createElement('span');
-        
-        // Usar el símbolo █ y asignar la clase correspondiente
-        statusIndicator.textContent = ' ■';
-        
+
+        const statusElement = document.getElementById(`status-${index + 1}`);
+        const textElement = document.getElementById(`text-${index + 1}`);
+
         if (isOnline) {
-            statusIndicator.classList.add('online');
+            statusElement.classList.remove('offline');
+            statusElement.classList.add('online');
+            textElement.textContent = 'Online';
         } else {
-            statusIndicator.classList.add('offline');
+            statusElement.classList.remove('online');
+            statusElement.classList.add('offline');
+            textElement.textContent = 'Offline';
         }
-        
-        link.appendChild(statusIndicator);
     });
 }
 
-// Ejecutar la verificación de estado
+// Llamar a la función para actualizar el estado
 updateStatus();

@@ -22,7 +22,7 @@ async function updateStatus() {
         const statusIndicator = document.createElement('span');
         
         // Usar el símbolo █ y asignar la clase correspondiente
-        statusIndicator.textContent = ' ■';
+        statusIndicator.textContent = ' █';
         
         if (isOnline) {
             statusIndicator.classList.add('online');

@@ -9,6 +9,12 @@ h3 {
     color: #ffffff; /* Color de los links */
 }
 
+h4 {
+    text-align: center;
+    color: #ffffff; /* Color de los links */
+}
+
+
 #linkList {
     list-style-type: none;
     padding: 0;

@@ -1,20 +1,11 @@
 body {
-    background-color: #ffc9c9;
     font-family: Arial, sans-serif;
-    text-align: center;
+    background-color: #222222;
+    color: white;
 }
 
-h1 {
-    color: #333;
-}
-
-.site {
-    margin: 10px 0;
-}
-
-.status-symbol {
-    font-size: 24px;
-    margin-right: 10px;
+.online {
+    color: green;
 }
 
 .offline {
@@ -22,12 +13,9 @@ h1 {
     animation: blink 1s infinite;
 }
 
-.online {
-    color: green;
-}
-
+/* Animación para hacer parpadear el símbolo */
 @keyframes blink {
-    50% {
-        opacity: 0;
-    }
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
 }

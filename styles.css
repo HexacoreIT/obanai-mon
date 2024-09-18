@@ -4,6 +4,43 @@ body {
     color: white;
 }
 
+h3 {
+    text-align: center;
+}
+
+#linkList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 500px;
+}
+
+#linkList li {
+    display: flex;
+    justify-content: space-between; /* Alinea el contenido en la misma línea */
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.status-container {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Espacio entre el símbolo y el texto */
+}
+
+a {
+    text-decoration: none;
+    color: #BCBCBC; /* Color de los links */
+}
+
+a:hover {
+    color: #E5E5E5; /* Color al pasar el mouse sobre los links */
+}
+
+.status {
+    font-size: 24px;
+}
+
 .online {
     color: green;
 }

@@ -1,36 +1,38 @@
-// URLs a monitorear
-const sites = [
-    { url: 'https://example.com', id: 'status-1' },
-    { url: 'https://anotherexample.com', id: 'status-2' }
-];
+// Seleccionar todos los elementos de la lista
+const links = document.querySelectorAll('#linkList li');
 
-// Función para verificar si los sitios están online u offline
-function checkSitesStatus() {
-    sites.forEach(site => {
-        fetch(site.url, { mode: 'no-cors' })
-            .then(response => {
-                updateStatus(site.id, 'online');
-            })
-            .catch(error => {
-                updateStatus(site.id, 'offline');
-            });
-    });
-}
-
-// Función para actualizar el estado visual
-function updateStatus(elementId, status) {
-    const statusElement = document.getElementById(elementId);
-    if (status === 'online') {
-        statusElement.classList.remove('offline');
-        statusElement.classList.add('online');
-    } else {
-        statusElement.classList.remove('online');
-        statusElement.classList.add('offline');
+// Función para verificar si un sitio está en línea
+async function checkSiteStatus(url) {
+    try {
+        const response = await fetch(url, { mode: 'no-cors' });
+        // Si fetch tiene éxito, el sitio está accesible
+        return response.status >= 200 && response.status < 300 || response.type === 'opaque';
+    } catch (error) {
+        // Si hay un error (por ejemplo, CORS o el sitio no está accesible), lo tratamos como offline
+        return false;
     }
 }
 
-// Inicializar verificación al cargar la página
-checkSitesStatus();
+// Función para actualizar el estado de cada sitio
+async function updateStatus() {
+    links.forEach(async (link) => {
+        const url = link.getAttribute('data-url');
+        const isOnline = await checkSiteStatus(url);
+        
+        const statusIndicator = document.createElement('span');
+        
+        // Usar el símbolo █ y asignar la clase correspondiente
+        statusIndicator.textContent = ' ■';
+        
+        if (isOnline) {
+            statusIndicator.classList.add('online');
+        } else {
+            statusIndicator.classList.add('offline');
+        }
+        
+        link.appendChild(statusIndicator);
+    });
+}
 
-// Hacer un refresh cada 60 segundos
-setInterval(checkSitesStatus, 60000);  // 60000 ms = 60 segundos
+// Ejecutar la verificación de estado
+updateStatus();

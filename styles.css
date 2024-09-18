@@ -6,6 +6,7 @@ body {
 
 h3 {
     text-align: center;
+    color: #008000; /* Color de los links */
 }
 
 #linkList {

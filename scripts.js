@@ -1,19 +1,19 @@
-// Función para verificar el estado del sitio
+// Función de status check del sitio
 async function checkSiteStatus(url) {
     try {
-        // Intentar hacer una petición al sitio
+        // Intento de petición al sitio
         const response = await fetch(url, { method: 'HEAD', mode: 'no-cors' });
-        // Si no lanza un error, asumimos que el sitio está online
+        // Si no da error, se asume que está online
         return true;
     } catch (error) {
-        // Si lanza un error, consideramos que está offline
+        // Si da error, se asume que está offline
         return false;
     }
 }
 
-// Función para actualizar el estado de cada sitio
+// Update status de cada sitio
 async function updateStatus() {
-    const links = document.querySelectorAll('#linkList li'); // Seleccionar todos los enlaces
+    const links = document.querySelectorAll('#linkList li'); // Función de selección de links
 
     links.forEach(async (link, index) => {
         const url = link.getAttribute('data-url');
@@ -34,5 +34,5 @@ async function updateStatus() {
     });
 }
 
-// Llamar a la función para actualizar el estado
+// Llamado a la función para status update
 updateStatus();

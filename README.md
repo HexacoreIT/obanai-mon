@@ -1,2 +1,2 @@
-# web_monitor
-Script de monitoreo online/offline de sitios web
+# Monitor de status web
+Simple función javascript para monitorear status de sitios web

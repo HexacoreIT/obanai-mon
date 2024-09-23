@@ -15,7 +15,6 @@ h4 {
     color: #ffffff; /* Color de los links h4 */
 }
 
-
 #linkList {
     list-style-type: none;
     padding: 0;
@@ -63,4 +62,29 @@ a:hover {
     0% { opacity: 1; }
     50% { opacity: 0; }
     100% { opacity: 1; }
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo negro con transparencia */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    width: 80%; /* Ajusta el tamaño del contenedor */
+    margin: 0 auto; /* Centrar el contenedor horizontalmente */
+    color: white; /* Color del texto */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5); /* Sombra para darle profundidad */
+    max-width: 800px; /* Limita el tamaño máximo */
+}
+
+h3, h4 {
+    color: #fff; /* Asegúrate de que los títulos tengan color blanco */
+}
+
+a {
+    color: #D4D4D4; /* Color para los links */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #addbe4; /* Color para hover en los links */
+    text-decoration: underline;
 }

@@ -4,85 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Website Monitor</title>
-<!-- Obanai_Iguro -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h3>Website status</h3>
-<h4>Dominios .com.ar</h4>
-    
-    <ul id="linkList">
-        <li data-url="https://www.nicolasmato.com.ar">
-            <a href="https://www.nicolasmato.com.ar" target="_blank">www.nicolasmato.com.ar</a>
-            <span class="status-container"><span class="status" id="status-1">●</span> <span id="text-1">Checking...</span></span>
-        </li>
-        <li data-url="https://nicolasmato.com.ar">
-            <a href="https://nicolasmato.com.ar" target="_blank">nicolasmato.com.ar</a>
-            <span class="status-container"><span class="status" id="status-2">●</span> <span id="text-2">Checking...</span></span>
-        </li>
-        <li data-url="https://www.hexacore.com.ar">
-            <a href="https://www.hexacore.com.ar" target="_blank">www.hexacore.com.ar</a>
-            <span class="status-container"><span class="status" id="status-3">●</span> <span id="text-3">Checking...</span></span>
-        </li>
-        <li data-url="https://hexacore.com.ar">
-            <a href="https://hexacore.com.ar" target="_blank">hexacore.com.ar</a>
-            <span class="status-container"><span class="status" id="status-4">●</span> <span id="text-4">Checking...</span></span>
-        </li>
-        <li data-url="https://www.marianatapia.com.ar">
-            <a href="https://www.marianatapia.com.ar" target="_blank">www.marianatapia.com.ar</a>
-            <span class="status-container"><span class="status" id="status-5">●</span> <span id="text-5">Checking...</span></span>
-        </li>
-        <li data-url="https://marianatapia.com.ar">
-            <a href="https://marianatapia.com.ar" target="_blank">marianatapia.com.ar</a>
-            <span class="status-container"><span class="status" id="status-6">●</span> <span id="text-6">Checking...</span></span>
-        </li>
-        <li data-url="https://test-hexa-offline.com.ar">
-            <a href="https://test-hexa-offline.com.ar" target="_blank">test-hexa-offline.com.ar</a>
-            <span class="status-container"><span class="status" id="status-7">●</span> <span id="text-7">Checking...</span></span>
-        </li>
-    </ul>
+    <div class="container">
+        <h3>Website status</h3>
+        <h4>Dominios .com.ar</h4>
+        <ul id="linkList">
+            <li data-url="https://www.nicolasmato.com.ar">
+                <a href="https://www.nicolasmato.com.ar" target="_blank">www.nicolasmato.com.ar</a>
+                <span class="status-container"><span class="status" id="status-1">●</span> <span id="text-1">Checking...</span></span>
+            </li>
+            <li data-url="https://nicolasmato.com.ar">
+                <a href="https://nicolasmato.com.ar" target="_blank">nicolasmato.com.ar</a>
+                <span class="status-container"><span class="status" id="status-2">●</span> <span id="text-2">Checking...</span></span>
+            </li>
+            <li data-url="https://www.hexacore.com.ar">
+                <a href="https://www.hexacore.com.ar" target="_blank">www.hexacore.com.ar</a>
+                <span class="status-container"><span class="status" id="status-3">●</span> <span id="text-3">Checking...</span></span>
+            </li>
+            <li data-url="https://hexacore.com.ar">
+                <a href="https://hexacore.com.ar" target="_blank">hexacore.com.ar</a>
+                <span class="status-container"><span class="status" id="status-4">●</span> <span id="text-4">Checking...</span></span>
+            </li>
+            <li data-url="https://www.marianatapia.com.ar">
+                <a href="https://www.marianatapia.com.ar" target="_blank">www.marianatapia.com.ar</a>
+                <span class="status-container"><span class="status" id="status-5">●</span> <span id="text-5">Checking...</span></span>
+            </li>
+            <li data-url="https://marianatapia.com.ar">
+                <a href="https://marianatapia.com.ar" target="_blank">marianatapia.com.ar</a>
+                <span class="status-container"><span class="status" id="status-6">●</span> <span id="text-6">Checking...</span></span>
+            </li>
+            <li data-url="https://test-hexa-offline.com.ar">
+                <a href="https://test-hexa-offline.com.ar" target="_blank">test-hexa-offline.com.ar</a>
+                <span class="status-container"><span class="status" id="status-7">●</span> <span id="text-7">Checking...</span></span>
+            </li>
+        </ul>
+    </div>
 
     <script src="scripts.js"></script>
 </body>
-<!--
-    ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣤⣤⣴⣶⣶⣿⣿⣿⣿⣿⣿⣿⣶⣶⣦⣤⣤⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣠⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣦⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣦⣀⠀⠀⠀⠀⠀⠀⠀⣀⡴⣶⠶⠦⣄⣀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⣿⣿⣿⣿⣻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣇⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣄⠀⠀⠀⣠⠾⡵⠚⣿⣠⡆⢸⣬⠟⡆⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣴⣿⣿⣿⣿⣿⣟⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡜⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⡔⠛⠳⠤⣴⣚⣁⢸⡀⡸⠧⢤⣷⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⣼⣿⣿⣿⣿⣿⣿⡇⣿⣿⣽⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣆⠘⢺⣋⣤⠙⣇⢹⣤⡖⠛⡾⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⣿⣿⣿⣿⣿⣿⣷⣿⣿⣿⣿⣿⡿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⢿⣿⣿⣿⣿⣿⣿⣇⠈⢿⣩⠞⠷⢞⠵⢷⢶⠁⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⣿⣿⣿⣿⡿⣿⣿⣿⣿⣿⣿⣿⠇⢻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣼⣿⣿⣿⣿⣿⣿⣿⡄⣠⡇⠠⠆⣸⣿⣿⡼⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⣿⠟⣼⡿⠁⢿⣿⣿⣿⣿⣿⡏⠀⠀⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡟⣿⣿⣿⣿⣿⣿⣿⡏⠉⠳⣤⣀⣠⠟⠁⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⢠⣿⡟⣾⣿⡇⠀⢸⣿⣿⣿⣿⣿⡟⠛⠛⠚⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣧⣿⣿⣿⣿⣿⣿⣿⣿⠀⠀⠀⢻⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⢀⣾⡿⣼⢿⣿⡇⠀⠈⣿⣿⣿⣿⣿⠁⠀⠀⠀⠘⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⢸⣿⣿⣿⣿⣿⣿⣿⡄⠀⠀⠈⠯⠅⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⣼⣿⣷⣿⣿⣿⣇⠀⠀⠘⣿⣿⣿⣿⡆⠀⠀⠀⠀⠀⢻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠰⣿⣿⣿⣇⣿⣿⣿⣿⣦⡦⠘⣿⣿⣿⣧⠀⡀⢚⣛⣦⣤⣼⣿⣿⣻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡟⠛⠛⣿⣿⣿⢻⣿⣿⣿⣿⣷⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠈⠙⢻⣿⣿⣿⣤⢽⣿⠦⠘⣿⣾⣿⣇⢀⡿⢿⣛⠉⣩⡍⢻⣿⣽⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣇⠸⣍⠻⣿⣿⢸⣿⣿⣿⣿⣿⣿⣷⣄⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⣿⣿⡇⠙⠶⢿⡶⠀⠉⠉⠿⠿⠏⠀⠾⢿⣟⣉⣓⠤⠟⢷⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡻⢶⡟⣠⣿⣿⢸⣿⣿⣿⣿⣿⣿⣿⣿⣷⣤⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⣾⣿⣿⣿⡇⠀⢰⠛⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣾⣿⣿⣿⣏⣿⣿⣿⣿⣿⣿⠀⡜⣰⢿⣿⣿⢸⣿⣿⣿⣿⣿⣿⣿⣿⡿⠋⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⣼⡿⣿⣿⣿⣿⠀⢼⣦⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣀⣠⡤⠴⠿⠿⣿⣿⣿⣿⣿⣟⣿⣿⡏⠀⣴⣿⢸⣿⣿⢸⣿⣿⣿⣿⣿⣿⠛⠁⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⣼⡿⣿⣿⣿⣾⣿⣇⠀⠈⠙⠲⢶⣒⠒⠚⠛⠋⠉⠁⠀⠀⠀⡀⠤⠐⠀⠀⢸⣿⣿⣿⣇⣿⢹⣷⣾⣿⣿⢸⣿⣿⢺⣿⣿⣿⣿⣿⣿⡆⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠈⠉⠓⠻⠿⣷⢿⣼⣿⣧⠀⠀⠀⠀⠈⠑⠦⢄⣀⣀⣀⣀⣀⡀⠴⠶⠖⠒⠈⣿⣿⣿⣿⣿⣿⣾⣿⣿⣿⣿⢸⣿⡿⡾⣿⣿⣿⣿⠛⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣾⡟⡿⣿⣿⣿⣷⣶⣤⣄⠀⠀⠀⠀⠀⠀⠀⠀⢐⡦⠔⠀⠀⢀⣼⣿⣿⣿⣿⣿⡏⣿⣿⣿⣿⣿⢸⣿⣷⣧⢹⣿⣇⣿⣧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⣾⣿⣾⡿⠿⠛⠛⠉⢻⣄⠈⢉⠛⠛⠛⠛⠓⠒⠛⠋⠈⠀⣀⣤⣵⣿⣿⣿⣿⣿⣿⢣⣿⣿⣿⡏⣿⣿⣿⣾⣿⣾⣿⣿⡜⣿⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⢀⡾⠟⠻⠁⡀⠀⠉⠀⡀⠀⣿⣦⡀⠐⠒⠒⠚⢛⣋⣩⠥⠖⠛⠉⠀⣸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⢿⣿⣿⣿⣿⣿⣇⣿⣿⣿⣹⣿⡄⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⢠⡞⢱⠀⣴⠈⣠⠡⣇⠀⠐⢰⣿⣿⡙⠻⢿⣿⣟⠋⠁⠀⠀⢀⣀⣤⣴⣛⣉⠉⠛⠻⣿⣿⣿⣿⣿⡟⣸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠿⠃⠀⢀⣠⠤⠤⣄⣀⠀
-⠀⠀⠀⠀⠀⠀⣼⠃⡏⠹⠀⠙⣤⡄⢹⢮⣄⣺⣿⣿⣿⣷⣦⣬⣭⣷⠶⠒⠊⠉⠁⠀⠀⠈⠙⠻⢷⣦⡈⠛⢿⣿⣿⢇⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣉⣠⡤⠞⣋⠴⠀⠶⡄⠈⠉
-⠀⠀⠀⠀⠀⠀⣿⠺⠃⣼⠃⡞⢀⡇⠀⠀⠈⠙⣻⡿⠟⠛⠛⠛⢿⣷⣦⣤⣀⠀⠀⠀⠀⠀⠀⠀⠀⠙⢿⣷⣤⡙⢿⣼⣿⣿⣿⣿⣧⣿⣿⣿⣿⣿⡅⣄⣠⡔⠓⣶⠚⠛⠉⠳⠄
-⠀⠀⠀⠀⠀⠀⠸⣇⠀⡧⢤⠉⣾⣉⡽⠖⠚⠉⠁⠀⠀⠀⠀⠀⠀⠀⠙⠻⠿⠿⢿⣶⣶⣦⠀⠀⠀⠀⠀⠈⠙⠿⣿⣿⣿⣿⣿⡿⠉⢼⣿⣿⣿⣿⣿⡠⠇⠀⢘⡡⠶⠚⡟⠲⠀
-⠀⠀⠀⠀⠀⠀⠀⠘⢦⣁⣒⣉⢧⡉⠹⠓⢶⡤⣄⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⣿⣿⣇⠀⠀⠀⠀⠀⠀⠀⠈⣿⣿⣿⡿⠁⢸⠌⠉⠉⢉⣉⠟⠁⢂⡴⠋⠀⠀⣠⠇⠀⠀
-⠀⠀⠀⠀⠀⠀⣠⡖⠋⠛⢭⡁⠀⠃⠀⢸⠀⠻⣄⠈⠉⠙⠒⢶⡒⠦⢤⡀⠀⠀⠀⠀⠙⣿⣿⣦⠀⠀⠀⠀⠀⠀⠀⢹⣿⡉⢷⡘⠓⢦⠐⣀⣠⠧⠖⠺⣯⣀⢀⣠⠴⠋⠀⠀⠀
-⠀⠀⠀⣠⣴⣿⣿⡇⠀⠀⠀⣿⣿⣷⣶⡖⠒⠒⠛⣆⠀⠀⠀⠀⠈⠓⣤⣿⡀⠀⠀⠀⠀⠹⣿⣿⣇⠀⠀⠀⠀⠀⠀⢸⣿⡇⠀⠙⠻⣽⣿⣿⣿⡄⠀⠀⣿⣿⣿⡦⣤⠀⠀⠀⠀
-⠀⢠⣾⣿⣿⣿⣿⣇⠀⠀⠀⢹⣿⣿⣿⣷⠀⠀⠀⠙⢧⡀⠀⠀⠰⠶⠮⢈⡇⠀⠀⠀⠀⠀⢹⣿⣿⣧⠀⠀⠀⠀⠀⠘⣿⣿⠀⠀⠀⠈⠙⢻⣿⣷⠀⠀⢸⣿⣿⣷⠘⣧⠠⠐⠀
-⣰⠏⠸⣿⣿⣿⣿⣿⡄⠀⠀⠀⣿⣿⣿⣿⡇⠀⠀⠀⠀⠱⣄⠀⠀⠀⠶⡤⠸⡄⠀⠀⠀⠀⠀⢻⣿⣿⣷⠀⠀⠀⠀⠀⢿⣿⠀⠀⠀⠀⠀⠀⣿⣿⣶⣤⣨⣿⣿⣿⠀⢹⡄⠀⠀
-⡏⠀⠀⢿⣿⣿⣿⣿⣇⠀⠀⠀⣿⣿⣿⣿⣷⠀⠀⠀⠀⠀⠘⣦⡀⠀⠀⠉⠁⣱⡀⠀⠀⠀⠀⠀⢹⣿⣿⣧⡀⠀⠀⠀⠸⣿⣆⠀⠀⠀⠀⠀⢸⣿⣿⣿⣇⠉⠙⠛⢧⡈⣧⠀⠀
-⠻⣤⠀⠈⣿⣿⣿⣿⣿⡀⠀⠀⢸⣿⣿⣿⣿⡀⠀⠀⠀⠀⠀⢹⣿⣤⠀⠀⠀⠀⢱⡀⠀⠀⠀⠀⠀⠙⢿⣿⣷⣄⠀⠀⠀⢿⣿⡀⠀⠀⠀⠀⠀⢻⣿⣿⣿⡆⠀⠀⠀⠉⠻⣦⠀
-⠀⠈⠳⣄⠻⣿⣿⣿⣿⣷⠀⠀⠸⣿⣿⣿⣿⣷⠀⠀⠀⠀⠀⢸⣿⣿⣷⣄⡀⠀⠉⠉⠲⣄⠀⠀⠀⠀⠀⠹⣿⣿⣷⡄⠀⠈⣿⣧⠀⠀⠀⠀⠀⠈⣿⣿⣿⣧⠀⠀⠀⠀⠀⢿⣷
-⠀⠀⢀⡿⠀⢹⣿⣿⣿⣿⠀⠀⠀⢻⣿⣿⣿⣿⡆⠀⠀⠀⠀⠀⣿⣿⣿⣿⣿⣷⣶⣄⣀⣈⡙⢦⣀⠀⠀⠀⠘⣿⣿⣿⡀⠀⠈⢿⣆⠀⠀⠀⠀⠀⢹⣿⣿⣿⡆⠀⠀⠀⠀⢸⣿
-⠀⠀⡾⠁⠀⠈⢿⣿⣿⣿⣇⠀⠀⠸⣿⣿⣿⣿⡗⠀⠀⠀⠀⠀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡄⠈⠷⠀⠀⠀⢻⣿⣿⡇⠀⠀⠈⠻⣦⡀⠀⠀⠀⠀⢿⣿⣿⣷⣄⠀⠀⠀⠀⢿
-⠀⣸⠁⠀⠀⠀⠘⣿⣿⣿⣿⠀⠀⠀⣿⣿⣿⣿⠃⠀⠀⠀⠀⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣄⣸⠀⠀⠀⠸⣿⣿⣷⠀⠀⠀⠀⢸⣿⣷⣄⠀⠀⠈⢻⣿⣿⣿⣷⡀⠀⠀⠈
-⠞⢹⡀⠀⠀⠀⠀⠸⣿⣿⣿⣇⠀⠀⢸⣿⣿⣿⠀⠀⠀⠀⠀⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⠀⠀⠀⢹⣿⣿⠀⠀⠀⠀⠀⢻⣿⣿⣆⡀⠀⠀⢹⣿⣿⣿⣿⡄⠀⠀
-
--->
 </html>

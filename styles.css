@@ -1,8 +1,18 @@
 body {
     font-family: Arial, sans-serif;
-    background-image: url("obanai.jpg");
-    /* background-color: #303030; */
+    /* background-image: url("01.jpg"); */
+    background-color: #434343;
     color: white;
+}
+
+h1 {
+    text-align: center;
+    color: #ffffff; /* Color de los links h1 */
+}
+
+h2 {
+    text-align: center;
+    color: #ffffff; /* Color de los links h2 */
 }
 
 h3 {
